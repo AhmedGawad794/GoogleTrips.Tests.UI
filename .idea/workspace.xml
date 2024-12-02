@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ace5955a-fef2-4bac-a37c-d5c0d11e664e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ace5955a-fef2-4bac-a37c-d5c0d11e664e" name="Changes" comment="adding helper classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/GoogleSearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FrameworkTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/Urls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/Urls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/resources/drivers/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/resources/drivers/geckodriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,21 +38,21 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2pfRxbuvso57V1o2ixTHlT30YEs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Work/Google Search/GoogleTrips.Tests.UI/src/test/java/tests/resources/drivers"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Work/Google Search/GoogleTrips.Tests.UI/src/test/java/tests/resources/drivers&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Work\Google Search\GoogleTrips.Tests.UI\src\test\java\tests\resources\drivers" />
@@ -60,28 +62,11 @@
       <recent name="D:\Work\Google Search\GoogleTrips.Tests.UI\src\test\java\tests\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FrameworkTest.testBrowserLaunch">
+  <component name="RunManager" selected="TestNG.GoogleSearchTest">
     <configuration name="D:/Work/Google Search/GoogleTrips.Tests.UI/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-java-framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FrameworkTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-java-framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FrameworkTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -106,11 +91,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GoogleSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-java-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GoogleSearchTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleSearchTest.verifyFlightSearchResults (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-java-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GoogleSearchTest" />
+      <option name="METHOD_NAME" value="verifyFlightSearchResults" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="1" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleSearchTest.verifyFlightSearchResults" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-java-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GoogleSearchTest" />
+      <option name="METHOD_NAME" value="verifyFlightSearchResults" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FrameworkTest.testBrowserLaunch" />
+        <item itemvalue="TestNG.GoogleSearchTest" />
+        <item itemvalue="TestNG.GoogleSearchTest.verifyFlightSearchResults (1)" />
         <item itemvalue="TestNG.D:/Work/Google Search/GoogleTrips.Tests.UI/testng.xml" />
-        <item itemvalue="TestNG.FrameworkTest" />
+        <item itemvalue="TestNG.GoogleSearchTest.verifyFlightSearchResults" />
+        <item itemvalue="TestNG.FrameworkTest.testBrowserLaunch" />
       </list>
     </recent_temporary>
   </component>
@@ -123,17 +164,23 @@
       <option name="presentableId" value="Default" />
       <updated>1733155392575</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding helper classes">
+      <created>1733168932699</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733168932699</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding helper classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding helper classes" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GoogleTrips_Tests_UI$GoogleSearchTest.ic" NAME="GoogleSearchTest Coverage Results" MODIFIED="1733170681427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
   </component>
 </project>
