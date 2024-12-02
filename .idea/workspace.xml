@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ace5955a-fef2-4bac-a37c-d5c0d11e664e" name="Changes" comment="" />
+    <list default="true" id="ace5955a-fef2-4bac-a37c-d5c0d11e664e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FrameworkTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +47,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "D:/Work/Google Search/GoogleTrips.Tests.UI/src/test/java/tests/resources/drivers"
   }
 }]]></component>
@@ -54,7 +60,7 @@
       <recent name="D:\Work\Google Search\GoogleTrips.Tests.UI\src\test\java\tests\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Work/Google Search/GoogleTrips.Tests.UI/testng.xml">
+  <component name="RunManager" selected="TestNG.FrameworkTest.testBrowserLaunch">
     <configuration name="D:/Work/Google Search/GoogleTrips.Tests.UI/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-java-framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -102,9 +108,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FrameworkTest.testBrowserLaunch" />
         <item itemvalue="TestNG.D:/Work/Google Search/GoogleTrips.Tests.UI/testng.xml" />
         <item itemvalue="TestNG.FrameworkTest" />
-        <item itemvalue="TestNG.FrameworkTest.testBrowserLaunch" />
       </list>
     </recent_temporary>
   </component>
@@ -126,11 +132,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java</url>
           <line>35</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/FrameworkTest.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

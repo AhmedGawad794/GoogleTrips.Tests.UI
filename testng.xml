@@ -22,12 +22,4 @@
             <class name="tests.GoogleSearchTest" />
         </classes>
     </test>
-
-    <!-- Temporary Framework Test -->
-    <test name="FrameworkTest">
-        <parameter name="browser" value="chrome" />
-        <classes>
-            <class name="tests.FrameworkTest" />
-        </classes>
-    </test>
 </suite>
