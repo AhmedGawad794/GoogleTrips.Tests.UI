@@ -3,40 +3,42 @@ package resources;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class ElementFinder {
     private WebDriver driver;
-
+    private WebDriverWait wait;
     public ElementFinder(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // Generic method to find element
     public WebElement findElement(By locator) {
-        return driver.findElement(locator);
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
-    // Send text to an element
     public void sendKeys(By locator, String text) {
-        driver.findElement(locator).sendKeys(text);
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        element.sendKeys(text);
     }
 
-    // Click on an element
     public void click(By locator) {
-        driver.findElement(locator).click();
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        element.click();
     }
 
-    // Submit a form
     public void submit(By locator) {
-        driver.findElement(locator).submit();
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        element.submit();
     }
 
-    // Retrieve the text of an element
     public String getText(By locator) {
-        return driver.findElement(locator).getText();
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return element.getText();
     }
 
-    // Switch to the last window
     public void switchToLastWindow() {
         driver.switchTo().window(driver.getWindowHandles().toArray()[driver.getWindowHandles().size() - 1].toString());
     }
