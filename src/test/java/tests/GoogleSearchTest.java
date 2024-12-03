@@ -1,7 +1,6 @@
 package tests;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.ResultsPage;
 import resources.BrowserType;
@@ -10,14 +9,6 @@ public class GoogleSearchTest extends BaseTest{
     private final String origin = "Cairo";
     private final String destination = "Marsa Alam";
     private final String query = "flights from " + origin + " to " + destination;
-    /*@DataProvider(name = "browsers")
-    public Object[][] browsers() {
-        return new Object[][] {
-                //{ BrowserType.FIREFOX },
-                { BrowserType.CHROME },
-                { BrowserType.EDGE }
-        };
-    }*/
     @Test
     public void verifyFlightSearchResults() {
 

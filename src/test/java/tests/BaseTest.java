@@ -5,10 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.*;
 import pages.GoogleSearchPage;
-import resources.BrowserType;
 import resources.Urls;
 
 public class BaseTest {
@@ -16,7 +14,7 @@ public class BaseTest {
     protected GoogleSearchPage googleSearchPage;
     @BeforeClass(alwaysRun = true)
     @org.testng.annotations.Parameters("browser")
-    public void setUp(String browser) {
+    public void setUp(@Optional("chrome") String browser) {
         String driverPath = System.getProperty("user.dir") + Urls.DriversDirectory;
         switch (browser.toLowerCase()) {
             case "chrome":
