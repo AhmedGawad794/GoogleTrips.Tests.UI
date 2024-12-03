@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ace5955a-fef2-4bac-a37c-d5c0d11e664e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/WeatherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RestaurantTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ResultsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/ElementFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/ElementFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
       <recent name="D:\Work\Google Search\GoogleTrips.Tests.UI\src\test\java\tests\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Work/Google Search/GoogleTrips.Tests.UI/testng.xml">
+  <component name="RunManager" selected="TestNG.RestaurantTest">
     <configuration name="D:/Work/Google Search/GoogleTrips.Tests.UI/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-java-framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -113,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleSearchTest.verifyFlightSearchResults" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RestaurantTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-java-framework" />
       <extension name="coverage">
         <pattern>
@@ -122,9 +121,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GoogleSearchTest" />
-      <option name="METHOD_NAME" value="verifyFlightSearchResults" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="tests.RestaurantTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -150,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RestaurantTest" />
         <item itemvalue="TestNG.D:/Work/Google Search/GoogleTrips.Tests.UI/testng.xml" />
         <item itemvalue="TestNG.GoogleSearchTest.verifyFlightSearchResults (1)" />
         <item itemvalue="TestNG.GoogleSearchTest" />
         <item itemvalue="TestNG.WeatherTest" />
-        <item itemvalue="TestNG.GoogleSearchTest.verifyFlightSearchResults" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733250488298</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2-Check the weather in “Marsa Alam” by entering a search query “Marsa Alam&#10;weather”&#10;3- verify that the weather result related to “Marsa Alam”">
+      <created>1733252370782</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733252370782</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -211,7 +216,8 @@
     <MESSAGE value="some refactor" />
     <MESSAGE value="adding more assertions" />
     <MESSAGE value="fix parallel execution issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix parallel execution issue" />
+    <MESSAGE value="2-Check the weather in “Marsa Alam” by entering a search query “Marsa Alam&#10;weather”&#10;3- verify that the weather result related to “Marsa Alam”" />
+    <option name="LAST_COMMIT_MESSAGE" value="2-Check the weather in “Marsa Alam” by entering a search query “Marsa Alam&#10;weather”&#10;3- verify that the weather result related to “Marsa Alam”" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GoogleTrips_Tests_UI$GoogleSearchTest.ic" NAME="GoogleSearchTest Coverage Results" MODIFIED="1733170681427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -5,6 +5,7 @@
         <classes>
             <class name="tests.GoogleSearchTest" />
             <class name="tests.WeatherTest" />
+            <class name="tests.RestaurantTest" />
         </classes>
     </test>
 
@@ -14,6 +15,7 @@
         <classes>
             <class name="tests.GoogleSearchTest" />
             <class name="tests.WeatherTest" />
+            <class name="tests.RestaurantTest" />
         </classes>
     </test -->
 
@@ -23,6 +25,7 @@
         <classes>
             <class name="tests.GoogleSearchTest" />
             <class name="tests.WeatherTest" />
+            <class name="tests.RestaurantTest" />
         </classes>
     </test>
 </suite>
