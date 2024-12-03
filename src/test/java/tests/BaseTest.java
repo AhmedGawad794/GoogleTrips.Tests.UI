@@ -14,34 +14,28 @@ import resources.Urls;
 public class BaseTest {
     protected WebDriver driver;
     protected GoogleSearchPage googleSearchPage;
-    //@BeforeMethod
-    public void setUp(BrowserType browserType) {
+    @BeforeClass(alwaysRun = true)
+    @org.testng.annotations.Parameters("browser")
+    public void setUp(String browser) {
         String driverPath = System.getProperty("user.dir") + Urls.DriversDirectory;
-        switch (browserType) {
-            case CHROME:
+        switch (browser.toLowerCase()) {
+            case "chrome":
                 WebDriverManager.chromedriver().setup();
                 System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
-            case FIREFOX:
+            case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver.exe");
                 driver = new FirefoxDriver();
                 break;
-                /*WebDriverManager.firefoxdriver().setup();
-                System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver.exe");
-
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
-                firefoxOptions.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
-                driver = new FirefoxDriver(firefoxOptions);
-                break;*/
-            case EDGE:
+            case "edge":
                 WebDriverManager.edgedriver().setup();
                 System.setProperty("webdriver.edge.driver", driverPath + "msedgedriver.exe");
                 driver = new EdgeDriver();
                 break;
             default:
-                throw new IllegalArgumentException("Browser not supported: " + browserType);
+                throw new IllegalArgumentException("Browser not supported: " + browser);
         }
         driver.manage().window().maximize();
         driver.get(Urls.GoogleHomePage);
@@ -49,7 +43,7 @@ public class BaseTest {
         googleSearchPage.changeLanguageToEnglish();
     }
 
-    @AfterMethod
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {
             driver.quit();

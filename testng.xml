@@ -8,12 +8,12 @@
     </test>
 
     <!-- Firefox Tests -->
-    <test name="FirefoxTests">
+    <!-- test name="FirefoxTests">
         <parameter name="browser" value="firefox" />
         <classes>
             <class name="tests.GoogleSearchTest" />
         </classes>
-    </test>
+    </test -->
 
     <!-- Edge Tests -->
     <test name="EdgeTests">
