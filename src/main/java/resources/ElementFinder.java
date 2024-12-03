@@ -11,51 +11,33 @@ public class ElementFinder {
         this.driver = driver;
     }
 
-    public WebElement byName(String name) {
-        return driver.findElement(By.name(name));
+    // Generic method to find element
+    public WebElement findElement(By locator) {
+        return driver.findElement(locator);
     }
 
-    public void sendByName(String name, String text) {
-        driver.findElement(By.name(name)).sendKeys(text);
+    // Send text to an element
+    public void sendKeys(By locator, String text) {
+        driver.findElement(locator).sendKeys(text);
     }
 
-    public void submitByName(String name) {
-        driver.findElement(By.name(name)).submit();
+    // Click on an element
+    public void click(By locator) {
+        driver.findElement(locator).click();
     }
 
-    public WebElement byId(String id) {
-        return driver.findElement(By.id(id));
+    // Submit a form
+    public void submit(By locator) {
+        driver.findElement(locator).submit();
     }
 
-    public void sendById(String id, String text) {
-        driver.findElement(By.id(id)).sendKeys(text);
+    // Retrieve the text of an element
+    public String getText(By locator) {
+        return driver.findElement(locator).getText();
     }
 
-    public WebElement byClassName(String className) {
-        return driver.findElement(By.className(className));
-    }
-
-    public void sendByClassName(String className, String text) {
-        driver.findElement(By.className(className)).sendKeys(text);
-    }
-
-    public WebElement byXPath(String xPath) {
-        return driver.findElement(By.xpath(xPath));
-    }
-
-    public void sendByXPath(String xPath, String text) {
-        driver.findElement(By.xpath(xPath)).sendKeys(text);
-    }
-
-    public void byXPathAndClick(String xPath) {
-        driver.findElement(By.xpath(xPath)).click();
-    }
-
-    public WebElement byPartialLinkText(String partialLink) {
-        return driver.findElement(By.partialLinkText(partialLink));
-    }
-
-    public void byPartialLinkAndClick(String partialLink) {
-        driver.findElement(By.partialLinkText(partialLink)).click();
+    // Switch to the last window
+    public void switchToLastWindow() {
+        driver.switchTo().window(driver.getWindowHandles().toArray()[driver.getWindowHandles().size() - 1].toString());
     }
 }

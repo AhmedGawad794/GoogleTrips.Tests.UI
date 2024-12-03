@@ -7,12 +7,13 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.*;
+import pages.GoogleSearchPage;
 import resources.BrowserType;
 import resources.Urls;
 
 public class BaseTest {
     protected WebDriver driver;
-
+    protected GoogleSearchPage googleSearchPage;
     //@BeforeMethod
     public void setUp(BrowserType browserType) {
         String driverPath = System.getProperty("user.dir") + Urls.DriversDirectory;
@@ -44,9 +45,11 @@ public class BaseTest {
         }
         driver.manage().window().maximize();
         driver.get(Urls.GoogleHomePage);
+        googleSearchPage = new GoogleSearchPage(driver);
+        googleSearchPage.changeLanguageToEnglish();
     }
 
-    //@AfterMethod
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();

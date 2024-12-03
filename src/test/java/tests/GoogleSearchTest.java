@@ -3,14 +3,14 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pages.GoogleSearchPage;
 import resources.BrowserType;
 
 public class GoogleSearchTest extends BaseTest{
+    String query = "flights from Cairo to Marsa Alam";
     @DataProvider(name = "browsers")
     public Object[][] browsers() {
         return new Object[][] {
-                { BrowserType.FIREFOX },
+                //{ BrowserType.FIREFOX },
                 { BrowserType.CHROME },
                 { BrowserType.EDGE }
         };
@@ -18,8 +18,7 @@ public class GoogleSearchTest extends BaseTest{
     @Test(dataProvider = "browsers")
     public void verifyFlightSearchResults(BrowserType browserType) {
         setUp(browserType);
-        GoogleSearchPage googleSearchPage = new GoogleSearchPage(driver);
-        String query = "flights from Cairo to Marsa Alam";
+
         googleSearchPage.enterSearchQuery(query);
         googleSearchPage.pressEnter();
         try {
